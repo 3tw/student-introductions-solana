@@ -9,7 +9,6 @@
   const { api } = useApi()
   const { publicKey } = useWallet()
   const student = reactive({ name: '', message: '' })
-  const myStudentAccount = ref<Student | undefined>(undefined)
 
   async function submit() {
     if (!publicKey.value) return
@@ -23,18 +22,6 @@
       console.log(error)
     }
   }
-
-  async function getMyAccount() {
-    if (!publicKey.value) return
-    try {
-      const student = await api.students.getAccount(publicKey.value)
-      if (student) myStudentAccount.value = student
-    } catch (error) {}
-  }
-
-  onMounted(() => {
-    getMyAccount()
-  })
 </script>
 
 <template>

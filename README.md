@@ -1,6 +1,7 @@
 ## Solana Development Course Exercise - Vue3 App
-This is an exercise from the [Solana development course](https://soldev.app/course). Unlike the course code, I finished the exercises in Vue3.
-Key features of the app include connecting and interacting with the user's wallet, making calls to Solana program, fetching accounts, sorting them, and implementing search with pagination.
+This is an exercise from the [Solana development course](https://soldev.app/course).
+I didn't use React dependencies as suggested in the course. Instead, I decided to make a Vue3 project.
+Key features of the project include connecting and interacting with the user's wallet, making calls to Solana program, fetching accounts, sorting them, and implementing search with pagination.
 
 ## Notes
 One of the shortcomings of this app is that it relies on a third-party wallet provider ([solana-wallets-vue](https://github.com/lorisleiva/solana-wallets-vue)) to connect to a user's wallet.
@@ -8,7 +9,7 @@ The connection to the wallet is returned synchronously, preventing smooth routin
 On top of that, sometimes the request's fail or they take to long. There is no additional retry logic or timeouts, since optimization in this area is not a concern of this exercise.
 
 ### Goals
-I would like to take a closer look at the [solana-wallets-vue](https://github.com/lorisleiva/solana-wallets-vue) to find out if we can find out if the wallet is  `connected` asynchronously.
+I would like to take a closer look at the [solana-wallets-vue](https://github.com/lorisleiva/solana-wallets-vue) to see if Wallet can be  `connected` asynchronously.
 
 ## Setup
 Install dependencies by running and starting the development server

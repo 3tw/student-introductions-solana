@@ -12,6 +12,7 @@
     "@heroicons/vue": "^2.0.14",
     "@project-serum/borsh": "^0.2.5",
     "@solana/wallet-adapter-wallets": "^0.19.11",
+    "@solana/web3.js": "^1.73.2",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "18.11.18",
     "@vueuse/core": "^9.12.0",
